@@ -1,7 +1,7 @@
 var burgerMenu=document.querySelector(".burger-menu");
 var popup = document.querySelector(".popup");
 var close = document.querySelector(".close");
-
+var body = document.querySelector("body");
 burgerMenu.addEventListener('click',function(){
     popup.style.display="block";
 })
@@ -10,8 +10,9 @@ close.addEventListener('click',function(){
 })
 
 burgerMenu.addEventListener('click', function(){
-    document.querySelector("body").style.overflowY= "hidden";
+    body.classList.add("open-menu");
 })
 close.addEventListener('click', function(){
-    document.querySelector("body").style.overflowY= "scroll";
+    body.classList.remove("open-menu");
+    
 })
