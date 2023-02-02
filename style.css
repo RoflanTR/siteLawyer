@@ -480,7 +480,7 @@ button:hover {
 
 @media(max-width: 821px) {
     .popup {
-        height: 100%;
+        height: calc(100vh + 10vh);
         width: 70%;
         right: 0;
         padding: 40% 5% 0 5%;
@@ -495,8 +495,8 @@ button:hover {
     .popup-info {
         display: block;
         position: absolute;
-        bottom: 13px;
-        right: calc(50% - 120px);
+        bottom: 126px;
+        right: calc(50% - 123px);
     }
 
     .popup-info p:last-child {
