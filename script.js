@@ -8,19 +8,10 @@ burgerMenu.addEventListener('click',function(){
 close.addEventListener('click',function(){
     popup.style.display="none";
 })
-window.onload = function () {
-    hideAddressBar();
-    window.addEventListener("orientationchange", function () {
-        hideAddressBar();
-    }, false);
-}
 
-function hideAddressBar() {
-    setTimeout(function () {
-        document.body.style.height = window.outerHeight + 'px';
-        setTimeout(function () {
-            window.scrollTo(0, 1);
-        }, 1100);
-    }, 1000);
-    return false;
-}
+burgerMenu.addEventListener('click', function(){
+    document.querySelector("body").style.overflowY= "hidden";
+})
+close.addEventListener('click', function(){
+    document.querySelector("body").style.overflowY= "scroll";
+})
