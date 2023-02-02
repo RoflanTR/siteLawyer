@@ -477,7 +477,7 @@ button:hover {
 
 @media(max-width: 821px) {
     .popup {
-        height: 120%;
+        height: calc(100vh + 200px);
         width: 70%;
         right: 0;
         padding: 40% 5% 0 5%;
