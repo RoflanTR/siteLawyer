@@ -495,7 +495,7 @@ button:hover {
     .popup-info {
         display: block;
         position: absolute;
-        bottom: 126px;
+        bottom: 224px;
         right: calc(50% - 123px);
     }
 
@@ -660,5 +660,11 @@ button:hover {
 @media(max-width: 376px) {
     .menu-btn p {
         font-size: 20px;
+    }
+    
+}
+@media(max-width:330px){
+    .popup {
+        width: 97%;
     }
 }
